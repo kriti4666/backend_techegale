@@ -19,8 +19,9 @@ app.use('/manager', managerRoutes);
 
 
 
-
-
+app.get("/", (req, res) => {
+  res.send("hii")
+})
 
 app.listen(process.env.PORT || 8080, async (req, res) => {
     try {
